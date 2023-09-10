@@ -1,4 +1,5 @@
 @import '../../../sass/variable';
+@import '../../../sass/responsive';
 
 .gamebar{
     display: flex;
@@ -11,10 +12,19 @@
     padding: 5rem 0;
     margin-bottom: 1rem;
     font-size: 2rem;
+
+    @include media('<=phone'){
+        width : 40vh;
+        font-size: 4rem;
+    }
 }
 
 .current__player{
     font-size: 8rem;
+
+    @include media('<=phone'){
+        font-size: 12rem;
+    }
 }
 
 .button__reset{
@@ -24,6 +34,10 @@
     border:none;
     background-color: #fff;
     transition: filter .25s ease-in-out;
+
+    @include media('<=phone'){
+        font-size: 6rem;
+    }
 
     &:hover{
         filter: brightness(80%);

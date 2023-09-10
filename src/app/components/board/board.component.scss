@@ -1,3 +1,5 @@
+@import '../../../sass/responsive';
+
 .board{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -6,4 +8,10 @@
     width: 70vh;
     height: 70vh;
     gap : 3rem;
+
+    @include media('<=phone'){
+        width: 40vh;
+        height: 40vh;
+    }
+    
 }

@@ -48,6 +48,7 @@ export class BoardComponent implements OnInit {
     this.gameService.setResetGame(false)
     this.gameService.resetCurrentPlayer();
     this.gameService.resetElementsOnBoard();
+    this.gameService.resetEndGameString();
   }
 
   checkWinner() : SquareState | boolean{
@@ -95,6 +96,5 @@ export class BoardComponent implements OnInit {
     const index = this.boardItems.findIndex(item => item.id === squareState.id)
     this.boardItems[index].state = squareState.state;
     this.gameService.addElementOnBoard()
-    console.log(squareState);
   }
 }

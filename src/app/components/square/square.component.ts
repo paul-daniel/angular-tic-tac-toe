@@ -21,14 +21,12 @@ export class SquareComponent implements OnInit {
 
   ngOnInit() : void{
     this.gameService.endGame$.subscribe(value =>{
-      if(value){
         this.endgame = value;
-        console.log("value", value)
-      }
     });
   }
 
   handleClick(){
+    console.log('handle', this.endgame)
     if(this.squareState !== null || this.endgame !== "") return;
     this.squareState = this.gameService.getCurrentPlayer();
     this.gameService.switchPlayers();

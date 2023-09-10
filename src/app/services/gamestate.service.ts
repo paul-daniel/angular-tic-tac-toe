@@ -50,6 +50,10 @@ export class GamestateService {
   getEndGameString() {
     return this.endGameString$.value;
   }
+
+  resetEndGameString() {
+    this.endGameString$.next('');
+  }
   
   setResetGame(reset: boolean) {
     this.reset$.next(reset);
