@@ -1,0 +1,31 @@
+@import '../../../sass/variable';
+
+.square{
+    font-size: 10.6rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: $color__hidden__side;
+    // background-image: linear-gradient(to left, transparent, transparent 50%, $color__fire 50%, $color__pink);
+    // background-position: 100% 0;
+    // background-size: 200% 100%;
+    box-shadow: .5rem .1rem 2rem rgba($color__hidden__side,.5);
+    transition: all .25s ease-in;
+    backface-visibility: hidden;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */   
+    
+
+    &.hoverable{
+        cursor:pointer;
+        &:hover{
+            // background-position: 0 0;
+            transform: scale(1.03);
+        }
+    }
+}

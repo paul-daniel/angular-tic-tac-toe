@@ -1,0 +1,31 @@
+@import '../../../sass/variable';
+
+.gamebar{
+    display: flex;
+    background-color: $color__hidden__side;
+    color: #fff;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+    width: 70vh;
+    padding: 5rem 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.current__player{
+    font-size: 8rem;
+}
+
+.button__reset{
+    cursor: pointer;
+    padding: 2rem 1.5rem;
+    border-radius : 2px;
+    border:none;
+    background-color: #fff;
+    transition: filter .25s ease-in-out;
+
+    &:hover{
+        filter: brightness(80%);
+    }
+}

@@ -1,0 +1,3 @@
+<div class="board">
+    <app-square *ngFor="let item of boardItems" [squareState]="item.state" [id]="item.id" (squareStateChange)="handleChange($event)" ></app-square>
+</div>

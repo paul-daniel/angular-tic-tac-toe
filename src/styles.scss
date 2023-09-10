@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import './sass/variable';
+@import './sass/responsive';
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: calc((100vw / 1980)*10);
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+}

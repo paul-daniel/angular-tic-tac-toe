@@ -1,0 +1,15 @@
+@import '../sass/variable';
+
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(255,61,61);
+    background: linear-gradient(71deg, rgba($color__fire,1) 18%, rgba($color__pink,1) 100%);
+}
+
+.result__str{
+    font-size: 5rem;
+}
