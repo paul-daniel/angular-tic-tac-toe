@@ -1,4 +1,5 @@
 @import '../sass/variable';
+@import '../sass/responsive';
 
 .main{
     height: 100vh;
@@ -12,4 +13,8 @@
 
 .result__str{
     font-size: 5rem;
+    @include media('<=phone'){
+        font-size: 15rem;
+    }
+
 }

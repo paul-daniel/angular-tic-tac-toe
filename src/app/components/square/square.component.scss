@@ -1,4 +1,5 @@
 @import '../../../sass/variable';
+@import '../../../sass/responsive';
 
 .square{
     font-size: 10.6rem;
@@ -20,6 +21,9 @@
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;          /* Likely future */   
     
+    @include media('<=phone'){
+        font-size: 25rem;
+    }
 
     &.hoverable{
         cursor:pointer;

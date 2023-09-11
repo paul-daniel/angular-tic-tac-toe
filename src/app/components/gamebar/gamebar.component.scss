@@ -14,8 +14,8 @@
     font-size: 2rem;
 
     @include media('<=phone'){
-        width : 40vh;
-        font-size: 4rem;
+        width : 300rem;
+        font-size: 6rem;
     }
 }
 
@@ -23,7 +23,7 @@
     font-size: 8rem;
 
     @include media('<=phone'){
-        font-size: 12rem;
+        font-size: 15rem;
     }
 }
 
@@ -36,7 +36,8 @@
     transition: filter .25s ease-in-out;
 
     @include media('<=phone'){
-        font-size: 6rem;
+        padding: 5rem 5rem;
+        font-size: 10rem;
     }
 
     &:hover{
